@@ -64,15 +64,6 @@ const ProductSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-14">
-          <a
-            href="#contact"
-            onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
-            className="inline-block bg-primary text-primary-foreground font-body font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded-sm hover:bg-brand-teal-light transition-colors duration-300"
-          >
-            Enquire Now
-          </a>
-        </div>
       </div>
     </section>
   );
