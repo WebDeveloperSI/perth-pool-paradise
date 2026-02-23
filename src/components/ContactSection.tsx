@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Send } from "lucide-react";
+import { Send, ChevronDown } from "lucide-react";
 
 const colourOptions = ["Charcoal Stripe", "Mango Stripe", "Watermelon Stripe", "Not sure yet"];
 
@@ -154,18 +154,21 @@ const ContactSection = () => {
               <label htmlFor="colour" className="block font-body text-sm font-medium text-foreground mb-2">
                 Colour Preference
               </label>
+              <div className="relative">
               <select
                 id="colour"
                 name="colour"
                 value={form.colour}
                 onChange={handleChange}
-                className="w-full rounded-sm border border-input bg-background px-4 py-3 font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring appearance-none"
+                className="w-full rounded-sm border border-input bg-background px-4 py-3 pr-10 font-body text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-ring appearance-none"
               >
                 <option value="">Select a colour</option>
                 {colourOptions.map((c) => (
                   <option key={c} value={c}>{c}</option>
                 ))}
               </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+              </div>
             </div>
           </div>
 

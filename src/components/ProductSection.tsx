@@ -49,9 +49,16 @@ const ProductSection = () => {
                   {product.name}
                 </h3>
                 <div
-                  className="w-8 h-1 rounded-full mx-auto"
+                  className="w-8 h-1 rounded-full mx-auto mb-4"
                   style={{ backgroundColor: product.accent }}
                 />
+                <a
+                  href="#contact"
+                  onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
+                  className="inline-block bg-primary text-primary-foreground font-body font-semibold text-xs tracking-widest uppercase px-6 py-3 rounded-sm hover:bg-brand-teal-light transition-colors duration-300"
+                >
+                  Enquire Now
+                </a>
               </div>
             </div>
           ))}
