@@ -15,7 +15,7 @@ const images = [
 
 const LifestyleSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-background">
+    <section id="lifestyle" className="py-24 md:py-32 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">
