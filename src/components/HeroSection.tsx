@@ -2,7 +2,7 @@ import heroBg from "@/assets/hero-bg.jpeg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
         alt="Luxury infinity pool overlooking Perth coastline"
@@ -25,10 +25,11 @@ const HeroSection = () => {
           Click &amp; Collect available from Claremont.
         </p>
         <a
-          href="#products"
+          href="#contact"
+          onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
           className="inline-block bg-accent text-accent-foreground font-body font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded-sm hover:brightness-110 transition-all duration-300"
         >
-          Shop Now
+          Enquire Now
         </a>
       </div>
 

@@ -25,7 +25,7 @@ const features = [
 
 const WhySection = () => {
   return (
-    <section className="py-24 md:py-32 bg-section-gradient">
+    <section id="why" className="py-24 md:py-32 bg-section-gradient">
       <div className="container max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <p className="font-body text-sm tracking-[0.3em] uppercase text-accent mb-4">

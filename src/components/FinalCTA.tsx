@@ -26,13 +26,15 @@ const FinalCTA = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="mailto:hello@aqualuxe.com.au?subject=AquaLuxe%20Enquiry"
+            href="#contact"
+            onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="inline-block bg-accent text-accent-foreground font-body font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded-sm hover:brightness-110 transition-all duration-300"
           >
             Enquire Now
           </a>
           <a
-            href="mailto:hello@aqualuxe.com.au?subject=AquaLuxe%20Order"
+            href="#contact"
+            onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="inline-block border border-primary-foreground/30 text-primary-foreground font-body font-semibold text-sm tracking-widest uppercase px-10 py-4 rounded-sm hover:bg-primary-foreground/10 transition-all duration-300"
           >
             Reserve Yours
